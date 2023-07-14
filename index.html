@@ -145,6 +145,71 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/07/14/%E5%85%B3%E4%BA%8E%E9%98%B2%E6%8A%96%E5%92%8C%E8%8A%82%E6%B5%81/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/07/14/%E5%85%B3%E4%BA%8E%E9%98%B2%E6%8A%96%E5%92%8C%E8%8A%82%E6%B5%81/" class="post-title-link" itemprop="url">关于防抖和节流</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2023-07-14 20:37:47 / Modified: 21:17:46" itemprop="dateCreated datePublished" datetime="2023-07-14T20:37:47+08:00">2023-07-14</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="关于js中的防抖和节流"><a href="#关于js中的防抖和节流" class="headerlink" title="关于js中的防抖和节流"></a>关于js中的防抖和节流</h2><h4 id="一-为什么会有防抖和节流"><a href="#一-为什么会有防抖和节流" class="headerlink" title="一. 为什么会有防抖和节流"></a>一. 为什么会有防抖和节流</h4><p>在进行窗口的resize、scroll，输入框内容校验等操作时，如果事件处理函数调用的频率无限制，会加重浏览器的负担，导致用户体验非常糟糕。此时我们可以采用debounce（防抖）和throttle（节流）的方式来减少调用频率，同时又不影响实际效果。</p>
+<h4 id="二-防抖的理解"><a href="#二-防抖的理解" class="headerlink" title="二.防抖的理解"></a>二.防抖的理解</h4><p>当持续触发事件时，一定时间段内没有再触发事件，事件处理函数才会执行一次，如果设定的时间到来之前，又一次触发了事件，就重新开始计时。</p>
+<h5 id="生活中的实例"><a href="#生活中的实例" class="headerlink" title="生活中的实例"></a>生活中的实例</h5><p>有人进入电梯（触发事件），那么电梯10秒后出发，这是如果有人进电梯，那电梯会重新计算，10秒后再出发。</p>
+<h4 id="三，节流的理解"><a href="#三，节流的理解" class="headerlink" title="三，节流的理解"></a>三，节流的理解</h4><p>规定一个单位时间，在这个单位时间内，只能有一次触发事件的回调函数执行，如果在同一个单位时间内某事件被触发多次，只有一次能生效。</p>
+<h5 id="生活中的实例-1"><a href="#生活中的实例-1" class="headerlink" title="生活中的实例"></a>生活中的实例</h5><p>射击子弹时，每隔固定的时间发出一颗子弹，就算一直搬动扳机也不会改变</p>
+<h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><p>函数防抖和函数节流都是防止某一时间频繁触发，但是这两兄弟之间的原理却不一样。</p>
+<p>函数防抖是某一段时间内只执行一次，而函数节流是间隔时间执行。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://example.com/2023/07/12/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -337,9 +402,13 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">posts</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">tags</span>
       </div>
   </nav>
 </div>
